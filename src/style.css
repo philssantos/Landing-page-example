@@ -1,0 +1,204 @@
+:root {
+    --main-font-style: Arial, Helvetica, sans-serif; 
+}
+
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: #000000;
+    padding: 16px 140px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside {
+    position: fixed;
+    z-index: 1000;
+    width: 80vw;
+    height: 100vh;
+    background-color: #000000;
+    opacity: 0.8;
+}
+
+.side-menu {
+    position: absolute;
+    background-color: #FFC502;
+    width: 318px;
+    height: 100vh;
+    z-index: 1000;
+    right: 0px;
+}
+
+.side-menu > i {
+    color: #000000;
+    font-size: 2em;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.side-menu > ul > li {
+    margin-top: 50px;
+    list-style: none;
+    font-family: var(--main-font-style);
+    font-weight: 800;
+    line-height: 2em;
+    font-size: 1.6em;
+}
+
+header.logo {
+    text-align: left;
+}
+
+i {
+    color: #FFFF;
+    font-size: 1.5em;
+}
+
+.wp-home {
+    background-image: url(./images/wp-main2.jpeg);
+    background-size: 100% 100%;
+    padding-left: 134px;
+    opacity: 0.6;
+    width: 100%;
+    height: 632px;
+    display: flex;
+    align-items: center;
+}
+
+.wp-home div > h1 {
+    font-family: var(--main-font-style);
+    font-size: 76px;
+    color: #FFFF;
+    max-width: 850px;
+}
+
+.wp-home > div > .yellow-bar {
+    background-color: #FFC502;
+    width: 149px;
+    height: 20px;
+    align-self: start;
+}
+
+main {
+    background-color: #FFC502;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+main > .right-box {
+    width: 50%;
+    height: 470px;
+}
+
+main > .left-box {
+    width: 50%;
+    height: 470;
+}
+
+.caroussel {
+    background-color: #FFFF;
+    min-width: 627px;
+    height: 459px;
+    position: relative;
+    float: right;
+    top: -60px;
+}
+
+.inner-caroussel > img {
+    width: 81px;
+    height: 43px;
+    margin-top: 111px;
+    margin-left: 75px;
+}
+
+.inner-caroussel > h2 {
+    font-family: var(--main-font-style);
+    margin-left: 75px;
+}
+
+.inner-caroussel > p {
+    font-family: var(--main-font-style);
+    margin-left: 75px;
+    width: 393px;
+}
+
+#carousselFItem {
+    right: 130px;
+}
+
+#carousselSItem {
+    right: 52px;
+}
+
+#carousselTItem {
+    right: -25px;
+}
+
+.selected {
+    background-color: #FFC502;
+    position: relative;
+    top: 100px;
+    float: right;
+    width: 35px;
+    height: 14px;
+}
+
+.unselected {
+    background-color: #000000;
+    position: relative;
+    top: 100px;
+    float: right;
+    width: 35px;
+    height: 14px;
+}
+
+.image-slide {
+    background-image: url(./images/img-slide1.png);
+    max-width: 723px;
+    height: 459px;
+    position: relative;
+    top: -96px;
+}
+
+.arrows-slide {
+    width: 74px;
+    height: 74px;
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    top: -97px;
+    cursor: pointer;
+}
+
+.arrows-slide > img {
+    transition: .4s;
+    margin-top: 20px;
+}
+
+.arrow-slide-on {
+    background-color: #333333;
+}
+
+.arrow-slide-off {
+    background-color: #000;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+

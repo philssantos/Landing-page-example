@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="./images/logo.png" class="logo" alt="logo">
+            </div>
+            <div>
+                <i class="fas fa-bars" onclick="callMenu()"></i>
+            </div>
+        </nav>
+    </header>
+    <aside class="d-none"></aside>
+    <div class="side-menu d-none">
+        <i class="fas fa-times" onclick="closeMenu()"></i>
+        <ul>
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+            <li>Menu 4</li>
+        </ul>
+    </div>
+    <section>
+        <div class="wp-home">
+            <div>
+                <h1>Lorem ipsum dolor sit amet, consetetur</h1>
+                <div class="yellow-bar"></div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <div class="right-box">
+            <div id="caroussel" class="caroussel">
+                <div class="inner-caroussel" id="cr-1">
+                    <img src="./images/truck.png">
+                    <h2>Caroussel 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                    sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+                    magna aliquyam erat, sed diam voluptua. 
+                    At vero eos et accusam et justo duo</p>
+                </div>
+                    <div id="carousselFItem" class="selected" indItem ></div>
+                    <div id="carousselSItem" class="unselected" indItem ></div>
+                    <div id="carousselTItem" class="unselected" indItem ></div>
+                </div>  
+            </div>
+        </div>
+        <div class="left-box">
+            <div class="image-slide" id="image-slide"></div>
+            <div class="arrows-slide arrow-slide-off" onclick="imgSlideBackwards()" bl >
+                <img src="./images/left-arrow.png" alt="left arrow">
+            </div>
+            <div class="arrows-slide arrow-slide-on" onclick="imgSlideForward()" br >
+                <img src="./images/right-arrow.png" alt="right arrow" ra >
+            </div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
